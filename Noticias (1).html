@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal de Notícias</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+header{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:15px;
+}
+
+#pesquisa{
+    width:70%;
+    max-width:600px;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+.noticia{
+    background:white;
+    margin-bottom:25px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.noticia img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.conteudo{
+    padding:20px;
+}
+
+.conteudo h2{
+    color:#002147;
+    margin-bottom:10px;
+}
+
+.botao{
+    background:#002147;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.botao:hover{
+    background:#003d82;
+}
+
+.completa{
+    display:none;
+    margin-top:15px;
+    line-height:1.7;
+}
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1> Portal de Notícias</h1>
+
+    <input
+    type="text"
+    id="pesquisa"
+    placeholder="Pesquisar notícia..."
+    onkeyup="pesquisar()">
+</header>
+
+<div class="container">
+
+    <div class="noticia">
+        <div class="conteudo">
+            <h2>O horror das mulheres no afegãs sob o Talibã</h2>
+
+            <p>
+                Mulheres do afeganistão estão em situação extremamente grave.
+            </p>
+
+            <button class="botao"
+            onclick="abrir('n1')">
+            Ler notícia completa
+            </button>
+
+            <div class="completa" id="n1">
+                <p>
+                No Afeganistão, as mulheres enfrentam muitas restrições impostas pelo governo do Talibã. 
+                Elas têm dificuldades para estudar, trabalhar e participar da vida pública. 
+                Meninas não podem frequentar escolas de nível mais avançado nem universidades, e muitas mulheres foram impedidas de exercer diversas profissões. 
+                Além disso, existem regras rígidas sobre vestimenta, deslocamento e presença em espaços públicos. 
+                Essas medidas são consideradas por organizações internacionais uma grave violação dos direitos das mulheres.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <div class="conteudo">
+            <h2>Morrer tragica de Oliver Tree</h2>
+
+            <p>
+               Colição de 2 helicópteros causa morte de 6 famosos contendo oliver Tree junto.
+            </p>
+
+            <button class="botao"
+            onclick="abrir('n2')">
+            Ler notícia completa
+            </button>
+
+            <div class="completa" id="n2">
+                <p>
+                No dia 14 de junho de 2026, ocorreu uma grave colisão entre dois helicópteros no Rio de Janeiro. 
+                As aeronaves se chocaram durante o voo, provocando a queda e a morte de seis pessoas.
+                 Entre as vítimas estava o cantor norte-americano Oliver Tree. Equipes de resgate foram acionadas rapidamente, mas não houve sobreviventes.
+                  As autoridades iniciaram uma investigação para descobrir as causas do acidente e verificar se houve falha humana, técnica ou problemas nas condições de voo. 
+                O caso teve grande repercussão nacional e internacional devido à presença do cantor entre as vítimas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <div class="conteudo">
+            <h2>El niño no brasil</h2>
+
+            <p>
+                O El Niño é um fenômeno climático causado pelo aquecimento anormal das águas do Oceano Pacífico Equatorial.
+            </p>
+
+            <button class="botao"
+            onclick="abrir('n3')">
+            Ler notícia completa
+            </button>
+
+            <div class="completa" id="n3">
+                <p>
+                O El Niño é um fenômeno climático causado pelo aquecimento anormal das águas do Oceano Pacífico Equatorial, que altera o clima em várias partes do mundo. 
+                No Brasil, ele costuma provocar mais chuvas na Região Sul, secas no Norte e Nordeste e aumento das temperaturas em diversas áreas do país.
+                 A primeira ocorrência registrada aconteceu em 1525, quando o explorador espanhol Francisco Pizarro observou chuvas intensas na costa do Peru.
+                  O nome "El Niño" foi dado por pescadores peruanos porque o fenômeno geralmente ocorria próximo ao Natal, em referência ao Menino Jesus. Hoje,
+                   o El Niño é considerado um dos fenômenos climáticos mais importantes do planeta por seus impactos no clima, na agricultura e na economia.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+<div class="noticia">
+        <div class="conteudo">
+            <h2>Alerta civil por varios estados do  Brasil</h2>
+
+            <p>
+                 Alerta civil na madrugada no dia 20/06/2026 muito sitado nas redes virtual.
+            </p>
+
+            <button class="botao"
+            onclick="abrir('n4')">
+            Ler notícia completa
+            </button>
+
+            <div class="completa" id="n4">
+                <p>
+               Na madrugada de 20 de junho de 2026, milhares de pessoas receberam um alerta inesperado da Defesa Civil em seus celulares. 
+               O governo informou que o sistema pode ter sido alvo de um ataque hacker, causando o envio de mensagens falsas. 
+               O caso levantou preocupações sobre a segurança dos sistemas de alerta de emergência utilizados no país.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <div class="conteudo">
+            <h2>Eleição Politica</h2>
+
+            <p>
+                 O Brasil se prepara para as eleições gerais de outubro, quando serão escolhidos presidente, governadores, deputados e senadores.
+
+         </p>
+            <button class="botao"
+            onclick="abrir('n5')">
+            Ler notícia completa
+            </button>
+
+            <div class="completa" id="n5">
+                <p>
+              Em 2026, o Brasil realizará eleições gerais para escolher presidente da República, governadores, senadores, deputados federais e deputados estaduais. 
+              O primeiro turno está marcado para 4 de outubro e, se necessário, o segundo turno ocorrerá em 25 de outubro. 
+              A campanha eleitoral começa oficialmente em 16 de agosto. 
+              Uma das novidades é que os eleitos tomarão posse em janeiro de 2027, seguindo as novas regras da Constituição.
+               As eleições são consideradas um dos acontecimentos mais importantes do ano, pois definirão os representantes responsáveis pelas decisões políticas e administrativas
+                do país nos próximos anos.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<footer>
+    © 2026 Portal de Notícias
+</footer>
+
+<script>
+function abrir(id){
+    let noticia = document.getElementById(id);
+
+    if(noticia.style.display === "block"){
+        noticia.style.display = "none";
+    }else{
+        noticia.style.display = "block";
+    }
+}
+
+function pesquisar(){
+    let valor = document
+    .getElementById("pesquisa")
+    .value
+    .toLowerCase();
+
+    let noticias =
+    document.getElementsByClassName("noticia");
+
+    for(let i=0;i<noticias.length;i++){
+
+        let texto =
+        noticias[i].innerText.toLowerCase();
+
+        if(texto.indexOf(valor) > -1){
+            noticias[i].style.display="block";
+        }else{
+            noticias[i].style.display="none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
